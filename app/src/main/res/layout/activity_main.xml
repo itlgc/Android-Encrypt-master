@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_base64_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base64将明文字符编码/解码"/>
+
+    <Button
+        android:id="@+id/btn_base64_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base64将图片编码/解码"/>
+
+    <Button
+        android:id="@+id/btn_md5_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD5加密"/>
+
+    <Button
+        android:id="@+id/btn_des_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DES加解密"/>
+
+    <Button
+        android:id="@+id/btn_aes_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AES加解密"/>
+
+    <Button
+        android:id="@+id/btn_rsa_encrypt_public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RSA(非对称)公钥加密,私钥解密"/>
+    <Button
+        android:id="@+id/btn_rsa_encrypt_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RSA(非对称)私钥加密,公钥解密"/>
+    <Button
+        android:id="@+id/btn_rsa_encrypt_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RSA(非对称)私钥生成数字签名,公钥检验"/>
+
+    <Button
+        android:id="@+id/btn_xor_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XOR(异或)加解密"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入明文字符串"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
